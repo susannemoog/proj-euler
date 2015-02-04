@@ -16,3 +16,6 @@ Time: 8.14 seconds, Memory: 5.00Mb
 
 P6
 Time: 70 ms, Memory: 5.00Mb
+
+P7
+Time: 504 ms, Memory: 5.00Mb
