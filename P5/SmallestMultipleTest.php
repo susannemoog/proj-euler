@@ -11,7 +11,7 @@ class SmallestMultipleTest extends PHPUnit_Framework_TestCase {
 
 	public function testGetSmallestMultiple() {
 		$sm = new SmallestMultiple();
-		$ret = $sm->getSmallestMultiple(10);
+		$ret = $sm->getSmallestMultiple(20);
 		$this->assertSame(2520, $ret);
 	}
 
