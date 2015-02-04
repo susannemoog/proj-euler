@@ -22,3 +22,6 @@ Time: 504 ms, Memory: 5.00Mb
 
 P8
 Time: 214 ms, Memory: 4.75Mb
+
+P9
+Time: 237 ms, Memory: 5.00Mb
