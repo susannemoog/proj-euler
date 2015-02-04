@@ -31,7 +31,7 @@ class LargestAdjacentProductTest extends PHPUnit_Framework_TestCase {
 
 	public function testGetLargestProduct() {
 		$lap = new LargestAdjacentProduct();
-		$ret = $lap->getLargestProduct(13);
+		$ret = $lap->getLargestProduct(4);
 		$this->assertSame(5832, $ret);
 	}
 }
