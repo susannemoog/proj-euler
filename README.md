@@ -25,3 +25,6 @@ Time: 214 ms, Memory: 4.75Mb
 
 P9
 Time: 237 ms, Memory: 5.00Mb
+
+P10
+Time: 23.65 seconds, Memory: 5.00Mb
