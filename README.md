@@ -37,3 +37,6 @@ Time: 9.49 seconds, Memory: 5.00Mb
 
 P13
 Time: 40 ms, Memory: 3.50Mb
+
+P14
+Time: 3.62 seconds, Memory: 149.75Mb
