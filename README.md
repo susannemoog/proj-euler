@@ -40,3 +40,6 @@ Time: 40 ms, Memory: 3.50Mb
 
 P14
 Time: 3.62 seconds, Memory: 149.75Mb
+
+P15
+Time: 51 ms, Memory: 5.00Mb
