@@ -1,3 +1,5 @@
+Measured through PHPUnit in PHPStorm
+
 
 P1
 Time: 42 ms, Memory: 3.50Mb
@@ -46,3 +48,21 @@ Time: 51 ms, Memory: 5.00Mb
 
 P16
 Time: 52 ms, Memory: 5.00Mb
+
+P17
+Time: 58 ms, Memory: 3.50Mb
+
+P18
+Time: 69 ms, Memory: 5.00Mb
+
+P19
+Time: 66 ms, Memory: 3.50Mb
+
+P20
+Time: 59 ms, Memory: 3.50Mb
+
+P21
+Time: 121 ms, Memory: 5.50Mb
+
+P22
+Time: 103 ms, Memory: 5.50Mb
