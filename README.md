@@ -66,3 +66,6 @@ Time: 121 ms, Memory: 5.50Mb
 
 P22
 Time: 103 ms, Memory: 5.50Mb
+
+P23
+Time: 6.99 seconds, Memory: 12.25Mb
