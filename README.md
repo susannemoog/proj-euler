@@ -2,7 +2,7 @@
 Measured through PHPUnit in PHPStorm    
 
 | # | Name  | Time          | Memory            |
-| - | ----- | ------------: | -------------     |
+| - | ----- | ------------: | -----------------:|
 |P1 | Time: | 42 ms, 		|Memory: 3.50Mb     |
 |P2 | Time: | 57 ms, 		|Memory: 3.50Mb     |
 |P3 | Time: | 2.56 seconds, |Memory: 5.00Mb     |
