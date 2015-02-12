@@ -13,6 +13,6 @@ class ReciprocalCyclesTest extends PHPUnit_Framework_TestCase {
     {
         $rc = new ReciprocalCycles();
         $ret = $rc->longestReciprocalCycleBelowThousand();
-        $this->assertSame(982, $ret);
+        $this->assertSame(983, $ret);
     }
 }
