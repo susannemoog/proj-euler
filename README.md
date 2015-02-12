@@ -81,3 +81,6 @@ Time: 42 ms, Memory: 3.50Mb
 
 P27
 Time: 3.24 seconds, Memory: 3.75Mb
+
+P28
+Time: 52 ms, Memory: 5.00Mb
