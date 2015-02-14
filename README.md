@@ -40,3 +40,4 @@ Measured through PHPUnit in PHPStorm
 | P35 | 3.15 seconds  | Memory: 218.5Mb    |
 | P36 | 6.44 seconds  | Memory: 5.25Mb     |
 | P37 | 3.05 seconds  | Memory: 218.5Mb    |
+| P38 | 54 ms         | Memory: 4.00Mb     |

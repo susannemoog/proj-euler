@@ -14,6 +14,6 @@ class PandigitalMultiplesTest extends PHPUnit_Framework_TestCase {
     {
         $pm = new PandigitalMultiples();
         $ret = $pm->getLargestPandigitalMultiple();
-        $this->assertSame(123, $ret);
+        $this->assertEquals(932718654, $ret);
     }
 }
