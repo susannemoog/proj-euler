@@ -46,3 +46,5 @@ Measured through PHPUnit in PHPStorm
 | P41 | 3.07 seconds  | Memory: 44.75Mb    |
 | P42 | 294 ms        | Memory: 4.00Mb     |
 | P43 | 139 ms        | Memory: 3.75Mb     |
+| P44 | 461 ms        | Memory: 4.00Mb     |
+| P45 | 308 ms        | Memory: 3.75Mb     |
