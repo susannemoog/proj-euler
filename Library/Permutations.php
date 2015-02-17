@@ -36,4 +36,16 @@ class Permutations {
 
         return $return;
     }
+
+    public static function isPermutation($a, $b) {
+        $aArr = (str_split($a));
+        $bArr = (str_split($b));
+        sort($aArr);
+        sort($bArr);
+        if($aArr == $bArr) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
