@@ -1,4 +1,5 @@
 <?php
+namespace P13;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 09:34
  */
 
-class SumOfLargeNumber {
+class SumOfLargeNumber extends \Library\Timer {
 
 	public function sum(){
 		$num[] = '37107287533902102798797998220837590246510135740250';

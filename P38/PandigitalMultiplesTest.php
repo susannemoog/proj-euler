@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 18:57
- */
+namespace P38;
 
-require_once('PandigitalMultiples.php');
-class PandigitalMultiplesTest extends PHPUnit_Framework_TestCase {
+class PandigitalMultiplesTest extends \PHPUnit_Framework_TestCase {
 
 
     public function testGetLargestPandigitalMultiple()

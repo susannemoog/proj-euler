@@ -1,4 +1,5 @@
 <?php
+namespace P9;
 /**
  *
  * A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
@@ -11,7 +12,7 @@
  *
  */
 
-class PythagoranTriples {
+class PythagoranTriples extends \Library\Timer {
 
 	public function getSumByC($int) {
 		$givenC = $int;

@@ -1,4 +1,5 @@
 <?php
+namespace P1;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,9 +7,7 @@
  * Time: 20:43
  */
 
-require_once('problem1.php');
-class MultiThreeAndFiveTest extends PHPUnit_Framework_TestCase {
-
+class MultiThreeAndFiveTest extends \PHPUnit_Framework_TestCase {
     public function testSumReturns23ForBelow10()
     {
         $mtaf = new MultiThreeAndFive();

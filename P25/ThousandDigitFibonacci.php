@@ -1,4 +1,5 @@
 <?php
+namespace P25;
 /**
  * calculating with the formula from P2 is too slow
  * we know that length of 10^x is x+1, so 10^999 has
@@ -7,7 +8,7 @@
  * therefor more than or equal to 1000 digits
  */
 
-class ThousandDigitFibonacci {
+class ThousandDigitFibonacci extends \Library\Timer {
 
 
 	public function getThousandDigitFibonacci() {

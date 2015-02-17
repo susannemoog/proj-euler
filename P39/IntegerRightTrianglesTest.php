@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 19:42
- */
+namespace P39;
 
-require_once('IntegerRightTriangles.php');
-class IntegerRightTrianglesTest extends PHPUnit_Framework_TestCase {
+class IntegerRightTrianglesTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetMostTrianglesPerPerimeter()
     {

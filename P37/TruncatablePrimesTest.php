@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 18:19
- */
+namespace P37;
 
-require_once('TruncatablePrimes.php');
-class TruncatablePrimesTest extends PHPUnit_Framework_TestCase {
+class TruncatablePrimesTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetTruncatablePrimesSum()
     {

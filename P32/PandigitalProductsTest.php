@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 08:04
- */
+namespace P32;
 
-require_once('PandigitalProducts.php');
-class PandigitalProductsTest extends PHPUnit_Framework_TestCase {
+class PandigitalProductsTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetPandigitalProduct()
     {

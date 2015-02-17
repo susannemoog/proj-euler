@@ -1,21 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 17:58
- */
+namespace P36;
 
-require_once('../Library/Palindrome.php');
-class DoubleBasePalindromes {
-
+class DoubleBasePalindromes extends \Library\Timer {
 
     public function getPalindromeDoubleBased()
     {
         $max = 1000000;
         $sum = 0;
         for ($i=1; $i<$max; $i++) {
-            if(Palindrome::isPalindrome($i) && Palindrome::isPalindrome(decbin($i))) {
+            if(\Library\Palindrome::isPalindrome($i) && \Library\Palindrome::isPalindrome(decbin($i))) {
                 $sum += $i;
             }
         }

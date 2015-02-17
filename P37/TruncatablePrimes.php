@@ -1,17 +1,18 @@
 <?php
+namespace P37;
 /**
  * Created by PhpStorm.
  * User: Susanne
  * Date: 14.02.2015
  * Time: 18:19
  */
-require_once('../Library/PrimeNumbers.php');
-class TruncatablePrimes {
+require_once(dirname(dirname(__FILE__)) . '/Library/PrimeNumbers.php');
+class TruncatablePrimes extends \Library\Timer {
 
     public function getTruncatablePrimesSum()
     {
         ini_set('memory_limit', '2048M');
-        $primes = PrimeNumbers::getPrimes(1000000);
+        $primes = \Library\PrimeNumbers::getPrimes(1000000);
         $primes = array_filter($primes, function($prime) {
             $noWay = [
                 0,

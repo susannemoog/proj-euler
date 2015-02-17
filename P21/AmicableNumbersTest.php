@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 07:23
- */
+namespace P21;
 
-require_once('AmicableNumbers.php');
-class AmicableNumbersTest extends PHPUnit_Framework_TestCase {
+class AmicableNumbersTest extends \PHPUnit_Framework_TestCase {
 
 	public function testGetAmicableNumberPairsSum() {
 		$max = 1000;

@@ -1,4 +1,5 @@
 <?php
+namespace P26;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 18:40
  */
 
-class ReciprocalCycles {
+class ReciprocalCycles extends \Library\Timer {
 
     public function longestReciprocalCycleBelowThousand()
     {

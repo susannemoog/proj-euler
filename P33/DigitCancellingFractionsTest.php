@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 08:26
- */
+namespace P33;
 
-require_once('DigitCancellingFractions.php');
-class DigitCancellingFractionsTest extends PHPUnit_Framework_TestCase {
+class DigitCancellingFractionsTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetDigitCancellingFractions()
     {

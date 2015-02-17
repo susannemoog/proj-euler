@@ -1,4 +1,5 @@
 <?php
+namespace P33;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,8 +7,8 @@
  * Time: 08:26
  */
 
-require_once('../Library/Denominators.php');
-class DigitCancellingFractions {
+require_once(dirname(dirname(__FILE__)) . '/Library/Denominators.php');
+class DigitCancellingFractions extends \Library\Timer {
 
     public function getDenominator()
     {
@@ -43,7 +44,7 @@ class DigitCancellingFractions {
             }
         }
 
-        $finalDenominator /= Denominators::gcd($numerator, $finalDenominator);
+        $finalDenominator /=\Library\Denominators::gcd($numerator, $finalDenominator);
         return $finalDenominator;
     }
 }

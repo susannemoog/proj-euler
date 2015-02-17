@@ -1,11 +1,10 @@
 <?php
-
+namespace Library;
 /**
  *
  * from http://en.wikipedia.org/wiki/Binary_GCD_algorithm
  */
-class Denominators
-{
+class Denominators {
     public static function gcd($u, $v)
     {
         if ($u == 0) return $v;

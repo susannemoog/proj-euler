@@ -1,4 +1,5 @@
 <?php
+namespace P43;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 10:23
  */
 
-class SubStringDivisibility {
+class SubStringDivisibility extends \Library\Timer {
 
     public function getSumOfAllCases()
     {

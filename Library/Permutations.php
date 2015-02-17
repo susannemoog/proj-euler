@@ -1,4 +1,6 @@
 <?php
+namespace Library;
+
 /**
  * Created by PhpStorm.
  * User: Susanne

@@ -1,4 +1,5 @@
 <?php
+namespace P22;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 07:34
  */
 
-class NameScores {
+class NameScores extends \Library\Timer {
 
 	static protected $alphamap = [
 		'a' => '+1',

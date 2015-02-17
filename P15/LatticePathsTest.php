@@ -1,17 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 09.02.15
- * Time: 14:22
- */
+namespace P15;
 
-require_once('LatticePaths.php');
-class LatticePathsTest extends PHPUnit_Framework_TestCase {
+class LatticePathsTest extends \PHPUnit_Framework_TestCase {
 
 	public function testGetPaths() {
 		$lp = new LatticePaths();
 		$ret = $lp->getPaths(20,20);
-		$this->assertSame(6, $ret);
+		$this->assertSame(137846528820, round($ret));
 	}
 }

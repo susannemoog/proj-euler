@@ -1,4 +1,5 @@
 <?php
+namespace P6;
 /**
  * The sum of the squares of the first ten natural numbers is,
  * 1^2 + 2^2 + ... + 10^2 = 385
@@ -12,7 +13,7 @@
  *
  */
 
-class SumSquareDifference {
+class SumSquareDifference extends \Library\Timer {
 
 	public function getDifference($max) {
 		$sumSquares = 0;

@@ -1,4 +1,5 @@
 <?php
+namespace P38;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,8 +7,8 @@
  * Time: 18:57
  */
 
-require_once('../Library/Pandigital.php');
-class PandigitalMultiples {
+require_once(dirname(dirname(__FILE__)) . '/Library/Pandigital.php');
+class PandigitalMultiples extends \Library\Timer {
 
     public function getLargestPandigitalMultiple()
     {
@@ -25,7 +26,7 @@ class PandigitalMultiples {
 
         for($i=$upperBound; $i>=$lowerBound; $i--) {
             $result = (string)($i . (2 * $i));
-            if(Pandigital::isPandigital($result)) {
+            if(\Library\Pandigital::isPandigital($result)) {
                 return $result;
             }
         }

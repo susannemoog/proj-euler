@@ -1,4 +1,5 @@
 <?php
+namespace P5;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -8,7 +9,7 @@
  * Time: 7.99 seconds, Memory: 5.00Mb
  */
 
-class SmallestMultiple {
+class SmallestMultiple extends \Library\Timer {
 
 	public function getSmallestMultiple($max) {
 		$smallest = 0;

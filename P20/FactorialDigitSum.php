@@ -1,15 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 06:58
- */
+namespace P20;
 
-require_once('../Library/Factorial.php');
-class FactorialDigitSum {
+class FactorialDigitSum extends \Library\Timer {
 
 	public function getSum($n) {
-		return array_sum(str_split(Factorial::getFactorials($n)));
+		return array_sum(str_split(\Library\Factorial::getFactorials($n)));
 	}
 }

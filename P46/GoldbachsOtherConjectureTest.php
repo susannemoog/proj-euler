@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 16.02.2015
- * Time: 20:27
- */
-require_once('GoldbachsOtherConjecture.php');
-class GoldbachsOtherConjectureTest extends PHPUnit_Framework_TestCase {
+namespace P46;
+
+class GoldbachsOtherConjectureTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetNonMatching()
     {

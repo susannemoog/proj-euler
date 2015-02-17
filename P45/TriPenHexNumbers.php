@@ -1,4 +1,5 @@
 <?php
+namespace P45;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 18:50
  */
 
-class TriPenHexNumbers {
+class TriPenHexNumbers extends \Library\Timer {
 
     public function getNumberThatHasItAll()
     {

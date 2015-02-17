@@ -1,4 +1,5 @@
 <?php
+namespace P28;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 07:36
  */
 
-class NumberSpiral {
+class NumberSpiral extends \Library\Timer {
 
 	public function getSpiralSum($n) {
 		$sum = 1;

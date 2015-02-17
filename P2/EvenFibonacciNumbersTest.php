@@ -1,4 +1,5 @@
 <?php
+namespace P2;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,8 +7,7 @@
  * Time: 21:02
  */
 
-require_once('EvenFibonacciNumbers.php');
-class EvenFibonacciNumbersTest extends PHPUnit_Framework_TestCase {
+class EvenFibonacciNumbersTest extends \PHPUnit_Framework_TestCase {
 
     public function testSumOfFibonacci()
     {

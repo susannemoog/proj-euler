@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 09.02.15
- * Time: 15:04
- */
+namespace P17;
 
-class NumberAsWordsCharCount {
+class NumberAsWordsCharCount extends \Library\Timer {
 
 	public static function getNumberAsWordsCharCount($max) {
-		$fm = new NumberFormatter("en_GB", NumberFormatter::SPELLOUT);
+		$fm = new \NumberFormatter("en_GB", \NumberFormatter::SPELLOUT);
 		$out = '';
 		for($i=1;$i<=$max; $i++) {
 			$out .= $fm->format($i);
@@ -19,6 +14,6 @@ class NumberAsWordsCharCount {
 		}
 		$out = str_replace(' ', '', $out);
 		$out = str_replace('-', '', $out);
-		echo strlen($out);
+		return strlen($out);
 	}
 }

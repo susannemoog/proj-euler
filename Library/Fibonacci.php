@@ -1,5 +1,5 @@
 <?php
-
+namespace Library;
 class Fibonacci {
 
 	public static function getBigFibonacci($n) {

@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 15.02.2015
- * Time: 10:23
- */
+namespace P43;
 
-require_once('SubStringDivisibility.php');
-class SubStringDivisibilityTest extends PHPUnit_Framework_TestCase {
+class SubStringDivisibilityTest extends \PHPUnit_Framework_TestCase {
 
     public function testSubStringDivisibility()
     {

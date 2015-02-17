@@ -1,4 +1,5 @@
 <?php
+namespace P47;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,16 +7,15 @@
  * Time: 21:01
  */
 
-require_once('../Library/PrimeNumbers.php');
-class FourDistinctPrimeFactors {
+class FourDistinctPrimeFactors extends \Library\Timer {
 
     public function getConsecutiveWithFourDistinctFactors()
     {
         $lowerBound = 2 * 3 * 5 * 7;
         $tempArr = [];
-        $primes = PrimeNumbers::findPrimes(10000);
+        $primes = \Library\PrimeNumbers::findPrimes(10000);
         for($i = $lowerBound; ; $i++) {
-            $factors = PrimeNumbers::findPrimeFactorCountWithGivenPrimes($i, $primes);
+            $factors = \Library\PrimeNumbers::findPrimeFactorCountWithGivenPrimes($i, $primes);
             if($factors == 4 ) {
                 $tempArr[] = $i;
             } else {

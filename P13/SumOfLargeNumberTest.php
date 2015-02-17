@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 09.02.15
- * Time: 09:42
- */
+namespace P13;
 
-require_once ('SumOfLargeNumber.php');
-class SumOfLargeNumberTest extends PHPUnit_Framework_TestCase {
+class SumOfLargeNumberTest extends \PHPUnit_Framework_TestCase {
 
 	public function testSum() {
 		$slN = new SumOfLargeNumber();

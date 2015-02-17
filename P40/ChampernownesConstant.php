@@ -1,4 +1,5 @@
 <?php
+namespace P40;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 19:55
  */
 
-class ChampernownesConstant {
+class ChampernownesConstant extends \Library\Timer {
 
     public function getValueForExpression()
     {

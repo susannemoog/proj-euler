@@ -1,4 +1,5 @@
 <?php
+namespace P7;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,13 +7,12 @@
  * Time: 15:50
  */
 
-require_once ('../Library/PrimeNumbers.php');
-class calc10001stPrime {
+class calc10001stPrime extends \Library\Timer {
 
 	public function returnNthPrime($nth) {
 		$primeCounter = 0;
 		for($i=1;; $i++) {
-			if(PrimeNumbers::isPrime($i)) {
+			if(\Library\PrimeNumbers::isPrime($i)) {
 				$primeCounter++;
 				if ($primeCounter === $nth) {
 					return $i;

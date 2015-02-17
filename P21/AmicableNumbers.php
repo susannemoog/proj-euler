@@ -1,19 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 07:23
- */
+namespace P21;
 
-require_once('../Library/Divisors.php');
-class AmicableNumbers {
+class AmicableNumbers extends \Library\Timer {
 
 	public function getAmicableNumberPairsSum($max) {
 		$pairs = [];
 		for($i=1; $i<$max; $i++) {
-			$p1 = Divisors::sumOfDivisors($i);
-			if ($p1 !== $i && Divisors::sumOfDivisors($p1) === $i) {
+			$p1 = \Library\Divisors::sumOfDivisors($i);
+			if ($p1 !== $i && \Library\Divisors::sumOfDivisors($p1) === $i) {
 				$pairs[] = $i;
 				$pairs[] = $p1;
 			}

@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 09.02.15
- * Time: 12:49
- */
+namespace P14;
 
-class LongestCollatzSequence {
+class LongestCollatzSequence extends \Library\Timer {
 
 
 	public function getLongest() {

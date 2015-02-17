@@ -1,4 +1,5 @@
 <?php
+namespace P30;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 11:51
  */
 
-class DigitFifthPowers {
+class DigitFifthPowers extends \Library\Timer {
 
 	public function getSumOfFifthPowerDigitNumbers() {
 		$pow = 5;

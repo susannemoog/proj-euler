@@ -1,4 +1,5 @@
 <?php
+namespace P44;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 18:37
  */
 
-class PentagonNumbers {
+class PentagonNumbers extends \Library\Timer {
 
     public function getMinimalPentagonNumberDifference()
     {

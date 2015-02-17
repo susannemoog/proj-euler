@@ -1,4 +1,5 @@
 <?php
+namespace P18;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -11,7 +12,7 @@
  8 5 9 3
  */
 
-class MaximumPathSum1 {
+class MaximumPathSum1 extends \Library\Timer {
 
 	public static function getSum($triangle) {
 		$size = count($triangle);

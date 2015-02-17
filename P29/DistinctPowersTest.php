@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 12.02.15
- * Time: 09:33
- */
-require_once('DistinctPowers.php');
-class DistinctPowersTest extends PHPUnit_Framework_TestCase {
+namespace P29;
+
+class DistinctPowersTest extends \PHPUnit_Framework_TestCase {
 
 	public function testGetCountOfDistinctTerms() {
 		$min = 2;

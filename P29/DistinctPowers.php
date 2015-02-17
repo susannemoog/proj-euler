@@ -1,4 +1,5 @@
 <?php
+namespace P29;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 09:33
  */
 
-class DistinctPowers {
+class DistinctPowers extends \Library\Timer {
 
 	public function getCountOfDistinctTerms($min, $max) {
 		$terms = [];

@@ -1,4 +1,5 @@
 <?php
+namespace P32;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 08:04
  */
 
-class PandigitalProducts {
+class PandigitalProducts extends \Library\Timer {
 
 
     public function getPandigitalProduct()

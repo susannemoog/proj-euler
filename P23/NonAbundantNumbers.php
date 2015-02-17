@@ -1,19 +1,12 @@
 <?php
+namespace P23;
 /**
  * Sources:
  * http://mathworld.wolfram.com/AbundantNumber.html
- *
- *
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 09:00
  */
 
-require_once('../Library/Divisors.php');
-require_once('../Library/CartesianProduct.php');
 
-class NonAbundantNumbers {
+class NonAbundantNumbers extends \Library\Timer {
 
 
 	protected $sumAbundants = [];
@@ -23,7 +16,7 @@ class NonAbundantNumbers {
 		$notSummable = [];
 		$abundantNumbers = [];
 		for($i = 1; $i <= $max; $i++) {
-			if((Divisors::sumOfDivisors($i) > $i)) {
+			if((\Library\Divisors::sumOfDivisors($i) > $i)) {
 				$abundantNumbers[] = $i;
 				foreach($abundantNumbers as $number) {
 					$this->sumAbundants[$number+$i] = true;

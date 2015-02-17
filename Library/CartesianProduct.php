@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 04.02.15
- * Time: 12:53
- */
+namespace Library;
 
 class CartesianProduct {
 

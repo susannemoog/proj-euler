@@ -1,17 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 06:26
- */
-
-require_once('MaximumPathSum1.php');
+namespace P18;
 
 /**
  * Class MaximumPathSum1Test
  */
-class MaximumPathSum1Test extends PHPUnit_Framework_TestCase {
+class MaximumPathSum1Test extends \PHPUnit_Framework_TestCase {
 
 	public function testGetSum() {
 		$triangle = [

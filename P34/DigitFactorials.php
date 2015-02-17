@@ -1,28 +1,29 @@
 <?php
+namespace P34;
 /**
  * Created by PhpStorm.
  * User: Susanne
  * Date: 14.02.2015
  * Time: 10:16
  */
-require_once('../Library/Factorial.php');
-class DigitFactorials {
+require_once(dirname(dirname(__FILE__)) . '/Library/Factorial.php');
+class DigitFactorials extends \Library\Timer {
 
     // Time: 1.08 minutes, Memory: 5.25Mb
     public function getDigitFactorialSum()
     {
-        $upperBound = bcmul(7,Factorial::getFactorials(9));
+        $upperBound = bcmul(7,\Library\Factorial::getFactorials(9));
         $factorials = [
-            0 => Factorial::getFactorials(0),
-            1 => Factorial::getFactorials(1),
-            2 => Factorial::getFactorials(2),
-            3 => Factorial::getFactorials(3),
-            4 => Factorial::getFactorials(4),
-            5 => Factorial::getFactorials(5),
-            6 => Factorial::getFactorials(6),
-            7 => Factorial::getFactorials(7),
-            8 => Factorial::getFactorials(8),
-            9 => Factorial::getFactorials(9),
+            0 =>\Library\Factorial::getFactorials(0),
+            1 =>\Library\Factorial::getFactorials(1),
+            2 =>\Library\Factorial::getFactorials(2),
+            3 =>\Library\Factorial::getFactorials(3),
+            4 =>\Library\Factorial::getFactorials(4),
+            5 =>\Library\Factorial::getFactorials(5),
+            6 =>\Library\Factorial::getFactorials(6),
+            7 =>\Library\Factorial::getFactorials(7),
+            8 =>\Library\Factorial::getFactorials(8),
+            9 =>\Library\Factorial::getFactorials(9),
         ];
 
         $foundSums = [];
@@ -42,18 +43,18 @@ class DigitFactorials {
 
     public function getDigitFactorialSumWithoutStrings()
     {
-        $upperBound = (7 * Factorial::getFactorials(9));
+        $upperBound = (7 *\Library\Factorial::getFactorials(9));
         $factorials = [
-            0 => Factorial::getFactorials(0),
-            1 => Factorial::getFactorials(1),
-            2 => Factorial::getFactorials(2),
-            3 => Factorial::getFactorials(3),
-            4 => Factorial::getFactorials(4),
-            5 => Factorial::getFactorials(5),
-            6 => Factorial::getFactorials(6),
-            7 => Factorial::getFactorials(7),
-            8 => Factorial::getFactorials(8),
-            9 => Factorial::getFactorials(9),
+            0 =>\Library\Factorial::getFactorials(0),
+            1 =>\Library\Factorial::getFactorials(1),
+            2 =>\Library\Factorial::getFactorials(2),
+            3 =>\Library\Factorial::getFactorials(3),
+            4 =>\Library\Factorial::getFactorials(4),
+            5 =>\Library\Factorial::getFactorials(5),
+            6 =>\Library\Factorial::getFactorials(6),
+            7 =>\Library\Factorial::getFactorials(7),
+            8 =>\Library\Factorial::getFactorials(8),
+            9 =>\Library\Factorial::getFactorials(9),
         ];
 
         $foundSums = 0;

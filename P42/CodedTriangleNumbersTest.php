@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 15.02.2015
- * Time: 10:01
- */
+namespace P42;
 
-require_once('CodedTriangleNumbers.php');
-class CodedTriangleNumbersTest extends PHPUnit_Framework_TestCase {
+class CodedTriangleNumbersTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetCountOfTriangleNumbers()
     {

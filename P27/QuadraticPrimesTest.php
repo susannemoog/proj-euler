@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 12.02.15
- * Time: 06:54
- */
+namespace P27;
 
-require_once('QuadraticPrimes.php');
-class QuadraticPrimesTest extends PHPUnit_Framework_TestCase {
+class QuadraticPrimesTest extends \PHPUnit_Framework_TestCase {
 
 	public function testPrimeCountForFormula() {
 		$qp = new QuadraticPrimes();

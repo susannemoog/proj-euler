@@ -1,12 +1,7 @@
 <?php
+namespace P8;
 
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 04.02.15
- * Time: 16:09
- */
-class LargestAdjacentProduct {
+class LargestAdjacentProduct extends \Library\Timer {
 
 
 	public function getLargestProduct($length) {

@@ -1,19 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 12.02.15
- * Time: 06:54
- */
+namespace P27;
 
-require_once('../Library/PrimeNumbers.php');
-class QuadraticPrimes {
+class QuadraticPrimes extends \Library\Timer {
 
 	public static function primeCount($a, $b) {
 		$primeCount = 0;
 		for($i=0;;$i++) {
 			$number = pow($i, 2) + ($a * $i) + $b;
-			if($number > 0 && PrimeNumbers::isPrime($number)) {
+			if($number > 0 && \Library\PrimeNumbers::isPrime($number)) {
 				$primeCount++;
 			} else{
 				break;
@@ -23,7 +17,7 @@ class QuadraticPrimes {
 	}
 
 	public function findMostPrimes() {
-		$primes = array_values(PrimeNumbers::getPrimes(999));
+		$primes = array_values(\Library\PrimeNumbers::getPrimes(999));
 		$primesCountBelowThousand = count($primes);
 		$max = 0;
 		$form = [];

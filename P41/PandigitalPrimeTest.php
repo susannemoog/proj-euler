@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 20:36
- */
-require_once('PandigitalPrime.php');
-class PandigitalPrimeTest extends PHPUnit_Framework_TestCase {
+namespace P41;
+
+class PandigitalPrimeTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetLargestPandigitalPrime()
     {

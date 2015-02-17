@@ -1,18 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 16.02.2015
- * Time: 20:27
- */
-require_once('../Library/PrimeNumbers.php');
-class GoldbachsOtherConjecture {
+namespace P46;
+
+class GoldbachsOtherConjecture extends \Library\Timer {
 
     public function getNonMatching()
     {
-        $primes = PrimeNumbers::findPrimes(10000);
+        $primes = \Library\PrimeNumbers::findPrimes(10000);
         for($i=35; ;$i+=2) {
-            if (PrimeNumbers::isPrime($i)) {
+            if (\Library\PrimeNumbers::isPrime($i)) {
                 continue;
             }
             $sumOfPrimeAndSquare = false;

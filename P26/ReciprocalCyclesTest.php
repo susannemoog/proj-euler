@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 11.02.2015
- * Time: 18:40
- */
+namespace P26;
 
-require_once('ReciprocalCycles.php');
-class ReciprocalCyclesTest extends PHPUnit_Framework_TestCase {
+class ReciprocalCyclesTest extends \PHPUnit_Framework_TestCase {
 
     public function testLongestReciprocalCycleUnderThousand()
     {

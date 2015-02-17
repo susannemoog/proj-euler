@@ -1,4 +1,5 @@
 <?php
+namespace P39;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 19:42
  */
 
-class IntegerRightTriangles {
+class IntegerRightTriangles extends \Library\Timer {
 
     public function getMostTrianglesPerPerimeter()
     {

@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 06:47
- */
+namespace P19;
 
-require_once('CountingSundays.php');
-class CountingSundaysTest extends PHPUnit_Framework_TestCase {
+class CountingSundaysTest extends \PHPUnit_Framework_TestCase {
 
 	public function testSundayCount() {
 		$minYear = 1901;

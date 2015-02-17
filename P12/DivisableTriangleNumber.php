@@ -1,4 +1,5 @@
 <?php
+namespace P12;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,13 +7,13 @@
  * Time: 08:27
  */
 
-require_once('../Library/PrimeNumbers.php');
-class DivisableTriangleNumber {
+require_once(dirname(dirname(__FILE__)) . '/Library/PrimeNumbers.php');
+class DivisableTriangleNumber extends \Library\Timer {
 
 	public function triangleWithXDivisors($divisorCount) {
 		$add = 1;
 		$triangle = 0;
-		$pn = new PrimeNumbers();
+		$pn = new \Library\PrimeNumbers();
 		for($i=1;;$i++) {
 			$triangle += $i*$add;
 			$primeFactors = $pn->findPrimeFactorsWithDuplicates($triangle);

@@ -1,4 +1,5 @@
 <?php
+namespace P11;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,7 +7,7 @@
  * Time: 07:53
  */
 
-class GridProduct {
+class GridProduct extends \Library\Timer {
 
 	public function getGridProduct() {
 		$grid = [

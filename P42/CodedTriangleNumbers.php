@@ -1,4 +1,5 @@
 <?php
+namespace P42;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 10:01
  */
 
-class CodedTriangleNumbers {
+class CodedTriangleNumbers extends \Library\Timer {
 
     public function getCountOfTriangleNumbers()
     {

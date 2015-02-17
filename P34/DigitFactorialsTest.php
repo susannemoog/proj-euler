@@ -1,18 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 14.02.2015
- * Time: 10:16
- */
+namespace P34;
 
-require_once('DigitFactorials.php');
-class DigitFactorialsTest extends PHPUnit_Framework_TestCase {
+class DigitFactorialsTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetDigitFactorialSum()
     {
         $df = new DigitFactorials();
-        $ret = $df->getDigitFactorialSumWithoutStrings();
+        $ret = $df->getDigitFactorialSum();
         $this->assertSame(40730, $ret);
     }
 }

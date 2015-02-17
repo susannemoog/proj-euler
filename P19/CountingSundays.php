@@ -1,4 +1,5 @@
 <?php
+namespace P19;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,13 +7,13 @@
  * Time: 06:47
  */
 
-class CountingSundays {
+class CountingSundays extends \Library\Timer {
 
 	public function sundayCount($minYear, $maxYear) {
 		$sundays = 0;
 		for($year=$minYear;$year<=$maxYear;$year++){
 			for($month=1; $month<=12; $month++) {
-				$date = new DateTime('01.' . $month . '.' . $year);
+				$date = new \DateTime('01.' . $month . '.' . $year);
 				if($date->format('l') == 'Sunday') {
 					$sundays++;
 				}

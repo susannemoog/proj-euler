@@ -1,4 +1,5 @@
 <?php
+namespace P3;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 22:05
  */
 
-class LargestPrime {
+class LargestPrime extends \Library\Timer {
 
     public function get($number)
     {

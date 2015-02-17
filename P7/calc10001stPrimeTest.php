@@ -1,4 +1,5 @@
 <?php
+namespace P7;
 /**
  * Created by PhpStorm.
  * User: susanne
@@ -6,8 +7,7 @@
  * Time: 15:50
  */
 
-require_once('calc10001stPrime.php');
-class calc10001stPrimeTest extends PHPUnit_Framework_TestCase {
+class calc10001stPrimeTest extends \PHPUnit_Framework_TestCase {
 
 
 	public function testReturnNthPrime() {

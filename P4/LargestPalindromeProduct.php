@@ -1,21 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 04.02.15
- * Time: 12:31
- */
+namespace P4;
 
-require_once ('../Library/CartesianProduct.php');
-
-class LargestPalindromeProduct {
+class LargestPalindromeProduct extends \Library\Timer {
 
 	public function getLargestPalindromeProduct($digits) {
 		$palindromes = [];
 		$low = $this->getLowest($digits);
 		$high = $this->getHighest($digits);
 		$values = range($low, $high);
-		$product = CartesianProduct::calculate($values, $values);
+		$product = \Library\CartesianProduct::calculate($values, $values);
 		foreach($product as $possiblePalindrome) {
 			if($this->isPalindrome($possiblePalindrome)) {
 				$palindromes[] = $possiblePalindrome;

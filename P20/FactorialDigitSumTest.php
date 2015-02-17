@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: susanne
- * Date: 10.02.15
- * Time: 06:58
- */
+namespace P20;
 
-require_once('FactorialDigitSum.php');
-class FactorialDigitSumTest extends PHPUnit_Framework_TestCase {
+class FactorialDigitSumTest extends \PHPUnit_Framework_TestCase {
 
 	public function testGetSum() {
 		$fds = new FactorialDigitSum();

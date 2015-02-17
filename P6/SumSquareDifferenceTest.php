@@ -1,4 +1,5 @@
 <?php
+namespace P6;
 /**
  * The sum of the squares of the first ten natural numbers is,
  * 1^2 + 2^2 + ... + 10^2 = 385
@@ -11,13 +12,12 @@
  * Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
 
-require_once('SumSquareDifference.php');
 
-class SumSquareDifferenceTest extends PHPUnit_Framework_TestCase {
+class SumSquareDifferenceTest extends \PHPUnit_Framework_TestCase {
 
 	public function testSumSquareDifference() {
 		$ssd = new SumSquareDifference();
 		$ret = $ssd->getDifference(100);
-		$this->assertSame(2640, $ret);
+		$this->assertSame(25164150, $ret);
 	}
 }

@@ -1,4 +1,5 @@
 <?php
+namespace P35;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,16 +7,14 @@
  * Time: 15:01
  */
 
-require_once('../Library/PrimeNumbers.php');
-require_once('../Library/Permutations.php');
-class CircularPrimes {
+class CircularPrimes extends \Library\Timer {
 
     public function getCircularPrimeCount()
     {
         ini_set('memory_limit', '2048M');
         $max = 1000000;
         $circularPrimes = [];
-        $primes = PrimeNumbers::getPrimes(1000000);
+        $primes = \Library\PrimeNumbers::getPrimes(1000000);
         $primes = array_filter($primes, function($prime) {
             $noWay = [
                 0,
@@ -42,7 +41,7 @@ class CircularPrimes {
             if(isset($circularPrimes[$prime])) {
                 continue;
             }
-            $permutations = Permutations::permutateCyclomatic(str_split($prime));
+            $permutations = \Library\Permutations::permutateCyclomatic(str_split($prime));
             $circularPrime = false;
             $tempArr = [];
             foreach($permutations as $permutation) {

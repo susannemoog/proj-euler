@@ -1,4 +1,5 @@
 <?php
+namespace P31;
 /**
  * Created by PhpStorm.
  * User: Susanne
@@ -6,7 +7,7 @@
  * Time: 19:32
  */
 
-class CoinSums {
+class CoinSums extends \Library\Timer {
 
     public function getCoinSumWaysForN($n)
     {

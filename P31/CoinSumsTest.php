@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Susanne
- * Date: 12.02.2015
- * Time: 19:32
- */
+namespace P31;
 
-require_once('CoinSums.php');
-class CoinSumsTest extends PHPUnit_Framework_TestCase {
+class CoinSumsTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetCoinSumWaysForN()
     {
