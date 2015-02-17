@@ -58,6 +58,8 @@ Hack
 
 Auto:
 
+|  #  | Time          |
+| --- | ------------: |  
 | P1 MultiThreeAndFive | Time: 1 ms |
 | P10 SumOfPrimes | Time: 0 ms |
 | P11 GridProduct | Time: 0 ms |
