@@ -110,4 +110,4 @@ Auto:
 | P47 FourDistinctPrimeFactors | Time: 15115 ms |
 | P51 PrimeDigitReplacements | Time: 1079 ms |
 | P52 PermutedMultiples | Time: 338 ms |
-
+| P53 CombinatoricSelections | Time: 1236 ms |
