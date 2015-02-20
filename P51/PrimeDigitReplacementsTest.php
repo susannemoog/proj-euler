@@ -8,7 +8,6 @@
 
 namespace P51;
 
-require_once('PrimeDigitReplacements.php');
 class PrimeDigitReplacementsTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetPrimeFromFamilyOfEight()

@@ -16,6 +16,6 @@ class ConsecutivePrimesTest extends \PHPUnit_Framework_TestCase {
         $max = 1000000;
         $cp = new ConsecutivePrimes();
         $ret = $cp->getConsecutivePrimes($max);
-        $this->assertSame(953, $ret);
+        $this->assertSame(997651, $ret);
     }
 }

@@ -15,6 +15,6 @@ class PrimePermutationsTest extends \PHPUnit_Framework_TestCase {
     {
         $pp = new PrimePermutations();
         $ret = $pp->getPrimePermutationSequence();
-        $this->assertSame(123, $ret);
+        $this->assertSame('296962999629', $ret);
     }
 }
