@@ -9,12 +9,12 @@
 namespace P56;
 
 
-class MaximumDigitSumTest extends \PHPUnit_Framework_TestCase {
+class MaximumDigitSumTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetMaximumDigitSum()
     {
         $mds = new MaximumDigitSum();
         $ret = $mds->getMaximumDigitSum();
-        $this->assertSame(972, $ret);
+        self::assertSame(972, $ret);
     }
 }

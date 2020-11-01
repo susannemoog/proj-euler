@@ -15,7 +15,7 @@ class PrimeNumbers {
 			return true;
 		}
 
-		$max = (int)bcsqrt((string)$number) + 1;
+		$max = (int)sqrt($number) + 1;
 
 		for($divisor = 3; $divisor <= $max; $divisor += 2) {
 			if($number % $divisor === 0) {
@@ -54,7 +54,7 @@ class PrimeNumbers {
 			}
 			while($number % $i == 0) {
 				$primeFactors[$i][] = $i;
-				$number = $number / $i;
+				$number /= $i;
 			}
 		}
 		return $primeFactors;
@@ -67,7 +67,7 @@ class PrimeNumbers {
 
             while($number % $primes[$i] == 0) {
                 $primeFactors[$primes[$i]] = $i;
-                $number = $number / $primes[$i];
+                $number /= $primes[$i];
             }
         }
         return count($primeFactors);
@@ -79,15 +79,15 @@ class PrimeNumbers {
         $isPrime = array_fill(0, $limit + 1, false);
         for ($i = 1; $i <= $sqrt; $i++) {
             for ($j = 1; $j <= $sqrt; $j++) {
-                $n = 4 * pow($i, 2) + pow($j, 2);
+                $n = 4 * ($i ** 2) + ($j ** 2);
                 if ($n <= $limit && ($n % 12 == 1 || $n % 12 == 5)) {
                     $isPrime[$n] ^= true;
                 }
-                $n = 3 * pow($i, 2) + pow($j, 2);
+                $n = 3 * ($i ** 2) + ($j ** 2);
                 if ($n <= $limit && $n % 12 == 7) {
                     $isPrime[$n] ^= true;
                 }
-                $n = 3 * pow($i, 2) - pow($j, 2);
+                $n = 3 * ($i ** 2) - ($j ** 2);
                 if ($i > $j && $n <= $limit && $n % 12 == 11) {
                     $isPrime[$n] ^= true;
                 }
@@ -95,7 +95,7 @@ class PrimeNumbers {
         }
         for ($n = 5; $n <= $sqrt; $n++) {
             if ($isPrime[$n]) {
-                $s = pow($n, 2);
+                $s = $n ** 2;
                 for ($k = $s; $k <= $limit; $k += $s) {
                     $isPrime[$k] = false;
                 }
@@ -115,7 +115,7 @@ class PrimeNumbers {
 		if($number != 2 && $number % 2 === 0) {
 			return false;
 		}
-		if(bcsqrt((string)$number) != (int)bcsqrt((string)$number)) {
+		if(sqrt($number) != (int)sqrt($number)) {
 			return true;
 		}
 		return false;

@@ -8,12 +8,12 @@
 
 namespace P51;
 
-class PrimeDigitReplacementsTest extends \PHPUnit_Framework_TestCase {
+class PrimeDigitReplacementsTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetPrimeFromFamilyOfEight()
     {
         $pdr = new PrimeDigitReplacements();
         $ret = $pdr->getPrimeFromFamilyOfEight();
-        $this->assertSame(121313, $ret);
+        self::assertSame(121313, $ret);
     }
 }

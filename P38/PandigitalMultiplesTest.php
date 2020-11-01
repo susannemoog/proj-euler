@@ -1,7 +1,7 @@
 <?php
 namespace P38;
 
-class PandigitalMultiplesTest extends \PHPUnit_Framework_TestCase {
+class PandigitalMultiplesTest extends \PHPUnit\Framework\TestCase {
 
 
     public function testGetLargestPandigitalMultiple()

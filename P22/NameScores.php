@@ -40,7 +40,7 @@ class NameScores extends \Library\Timer {
 
 	public function getNamesScoreSum() {
 		$sum = 0;
-		$names = explode(',', file_get_contents('../Ressources/p022_names.txt'));
+		$names = explode(',', file_get_contents(__DIR__ . '/../Ressources/p022_names.txt'));
 		sort($names);
 		$numbers = explode(',', str_ireplace(array_flip(static::$alphamap), static::$alphamap, str_replace('"', '', implode(',', $names))));
 

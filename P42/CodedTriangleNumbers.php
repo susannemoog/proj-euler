@@ -13,7 +13,7 @@ class CodedTriangleNumbers extends \Library\Timer {
     {
         $triangleWordCount = 0;
         $triangles = $this->getTriangles(100);
-        $doc = str_replace('"', '', file_get_contents('../Ressources/p042_words.txt'));
+        $doc = str_replace('"', '', file_get_contents(__DIR__ . '/../Ressources/p042_words.txt'));
         $wordArr = explode(',', $doc);
         foreach($wordArr as $word) {
             $charArr = str_split($word);

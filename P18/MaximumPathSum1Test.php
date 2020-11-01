@@ -4,7 +4,7 @@ namespace P18;
 /**
  * Class MaximumPathSum1Test
  */
-class MaximumPathSum1Test extends \PHPUnit_Framework_TestCase {
+class MaximumPathSum1Test extends \PHPUnit\Framework\TestCase {
 
 	public function testGetSum() {
 		$triangle = [
@@ -14,7 +14,7 @@ class MaximumPathSum1Test extends \PHPUnit_Framework_TestCase {
 			[8, 5, 9, 3]
 		];
 		$ret = MaximumPathSum1::getSum($triangle);
-		$this->assertSame(23, $ret);
+		self::assertSame(23, $ret);
 	}
 
 	public function testGetSumBigTriangle() {
@@ -36,6 +36,6 @@ class MaximumPathSum1Test extends \PHPUnit_Framework_TestCase {
 			, [04, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 04, 23]
 		];
 		$ret = MaximumPathSum1::getSum($triangle);
-		$this->assertSame(1074, $ret);
+		self::assertSame(1074, $ret);
 	}
 }

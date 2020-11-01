@@ -1,11 +1,11 @@
 <?hh
 
 require_once('FourDistinctPrimeFactors.hh');
-class FourDistinctPrimeFactorsTest extends \PHPUnit_Framework_TestCase {
+class FourDistinctPrimeFactorsTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetConsecutiveWithFourDistinctFactors(){
         $fdpf = new FourDistinctPrimeFactors();
         $ret = $fdpf->getConsecutiveWithFourDistinctFactors();
-        $this->assertSame(134043, $ret);
+        self::assertSame(134043, $ret);
     }
 }

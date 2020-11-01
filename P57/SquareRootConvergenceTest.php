@@ -9,7 +9,7 @@
 namespace P57;
 
 
-class SquareRootConvergenceTest extends \PHPUnit_Framework_TestCase {
+class SquareRootConvergenceTest extends \PHPUnit\Framework\TestCase {
 
     /**
      */
@@ -17,6 +17,6 @@ class SquareRootConvergenceTest extends \PHPUnit_Framework_TestCase {
     {
         $src = new SquareRootConvergence();
         $ret = $src->getFractionWithBiggerNumerator();
-        $this->assertSame(153, $ret);
+        self::assertSame(153, $ret);
     }
 }

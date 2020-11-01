@@ -30,7 +30,7 @@ class Permutations {
         $return = array();
         for ($i = count($items) - 1; $i >= 0; --$i) {
             $newItems = $items;
-            array_push($newItems, array_shift($newItems));
+            $newItems[] = array_shift($newItems);
             $return[] = $items = $newItems;
         }
 
@@ -44,8 +44,8 @@ class Permutations {
         sort($bArr);
         if($aArr == $bArr) {
             return true;
-        } else {
-            return false;
         }
+
+        return false;
     }
 }

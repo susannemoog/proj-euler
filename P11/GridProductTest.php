@@ -1,11 +1,14 @@
 <?php
+
 namespace P11;
 
-class GridProductTest extends \PHPUnit_Framework_TestCase {
+class GridProductTest extends \PHPUnit\Framework\TestCase
+{
 
-	public function testGridProduct() {
-		$gp = new GridProduct();
-		$ret = $gp->getGridProduct();
-		$this->assertSame(70600674, $ret);
-	}
+    public function testGridProduct()
+    {
+        $gp = new GridProduct();
+        $ret = $gp->getGridProduct();
+        self::assertSame(70600674, $ret);
+    }
 }

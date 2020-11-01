@@ -1,12 +1,12 @@
 <?php
 namespace P35;
 
-class CircularPrimesTest extends \PHPUnit_Framework_TestCase {
+class CircularPrimesTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetCircularPrimeCount()
     {
         $cp = new CircularPrimes();
         $ret = $cp->getCircularPrimeCount();
-        $this->assertSame(55, $ret);
+        self::assertSame(55, $ret);
     }
 }

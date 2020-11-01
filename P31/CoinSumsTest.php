@@ -1,13 +1,13 @@
 <?php
 namespace P31;
 
-class CoinSumsTest extends \PHPUnit_Framework_TestCase {
+class CoinSumsTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetCoinSumWaysForN()
     {
         $n = 200;
         $cs = new CoinSums();
         $ret = $cs->getCoinSumWaysForN($n);
-        $this->assertSame(73682, $ret);
+        self::assertSame(73682, $ret);
     }
 }

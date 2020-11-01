@@ -9,12 +9,12 @@
 namespace P49;
 
 
-class PrimePermutationsTest extends \PHPUnit_Framework_TestCase {
+class PrimePermutationsTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetPrimePermutationSequence()
     {
         $pp = new PrimePermutations();
         $ret = $pp->getPrimePermutationSequence();
-        $this->assertSame('296962999629', $ret);
+        self::assertSame('296962999629', $ret);
     }
 }

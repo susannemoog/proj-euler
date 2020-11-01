@@ -1,12 +1,12 @@
 <?php
 namespace P37;
 
-class TruncatablePrimesTest extends \PHPUnit_Framework_TestCase {
+class TruncatablePrimesTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetTruncatablePrimesSum()
     {
         $tp = new TruncatablePrimes();
         $ret = $tp->getTruncatablePrimesSum();
-        $this->assertSame(748317, $ret);
+        self::assertSame(748317, $ret);
     }
 }

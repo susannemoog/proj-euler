@@ -1,7 +1,7 @@
 <?php
 namespace P29;
 
-class DistinctPowersTest extends \PHPUnit_Framework_TestCase {
+class DistinctPowersTest extends \PHPUnit\Framework\TestCase {
 
 	public function testGetCountOfDistinctTerms() {
 		$min = 2;
@@ -9,7 +9,7 @@ class DistinctPowersTest extends \PHPUnit_Framework_TestCase {
 
 		$dp = new DistinctPowers();
 		$ret = $dp->getCountOfDistinctTerms($min, $max);
-		$this->assertSame(15, $ret);
+		self::assertSame(15, $ret);
 	}
 
 	public function testGetCountOfDistinctTermsEul() {
@@ -18,6 +18,6 @@ class DistinctPowersTest extends \PHPUnit_Framework_TestCase {
 
 		$dp = new DistinctPowers();
 		$ret = $dp->getCountOfDistinctTerms($min, $max);
-		$this->assertSame(9183, $ret);
+		self::assertSame(9183, $ret);
 	}
 }

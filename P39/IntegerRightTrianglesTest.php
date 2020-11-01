@@ -1,12 +1,12 @@
 <?php
 namespace P39;
 
-class IntegerRightTrianglesTest extends \PHPUnit_Framework_TestCase {
+class IntegerRightTrianglesTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetMostTrianglesPerPerimeter()
     {
         $irt = new IntegerRightTriangles();
         $ret = $irt->getMostTrianglesPerPerimeter();
-        $this->assertSame(840, $ret);
+        self::assertSame(840, $ret);
     }
 }

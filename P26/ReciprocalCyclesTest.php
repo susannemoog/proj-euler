@@ -1,12 +1,12 @@
 <?php
 namespace P26;
 
-class ReciprocalCyclesTest extends \PHPUnit_Framework_TestCase {
+class ReciprocalCyclesTest extends \PHPUnit\Framework\TestCase {
 
     public function testLongestReciprocalCycleUnderThousand()
     {
         $rc = new ReciprocalCycles();
         $ret = $rc->longestReciprocalCycleBelowThousand();
-        $this->assertSame(983, $ret);
+        self::assertSame(983, $ret);
     }
 }

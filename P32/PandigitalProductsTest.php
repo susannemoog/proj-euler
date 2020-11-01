@@ -1,12 +1,12 @@
 <?php
 namespace P32;
 
-class PandigitalProductsTest extends \PHPUnit_Framework_TestCase {
+class PandigitalProductsTest extends \PHPUnit\Framework\TestCase {
 
     public function testGetPandigitalProduct()
     {
         $pp = new PandigitalProducts();
         $ret = $pp->getPandigitalProduct();
-        $this->assertSame(45228, $ret);
+        self::assertSame(45228, $ret);
     }
 }

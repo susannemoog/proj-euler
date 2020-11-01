@@ -9,12 +9,12 @@
 namespace P58;
 
 
-class SpiralPrimesTest extends \PHPUnit_Framework_TestCase {
+class SpiralPrimesTest extends \PHPUnit\Framework\TestCase {
 
     public function testPrimeRatio()
     {
         $sp = new SpiralPrimes();
         $ret = $sp->primeRatioBelowTen();
-        $this->assertSame(26241, $ret);
+        self::assertSame(26241, $ret);
     }
 }

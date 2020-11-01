@@ -7,11 +7,11 @@
  */
 namespace P52;
 
-class PermutedMultiplesTest extends \PHPUnit_Framework_TestCase {
+class PermutedMultiplesTest extends \PHPUnit\Framework\TestCase {
 
 	public function testGetSmallestPermutedMultipleOfMax6() {
 		$pm = new PermutedMultiples();
 		$ret = $pm->getSmallestPermutedMultipleOfMax6();
-		$this->assertSame(142857, $ret);
+		self::assertSame(142857, $ret);
 	}
 }

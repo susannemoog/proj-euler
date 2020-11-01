@@ -1,11 +1,11 @@
 <?php
 namespace P14;
 
-class LongestCollatzSequenceTest extends \PHPUnit_Framework_TestCase {
+class LongestCollatzSequenceTest extends \PHPUnit\Framework\TestCase {
 
 	public function testGetLongest() {
 		$lcs = new LongestCollatzSequence();
 		$ret = $lcs->getLongest();
-		$this->assertSame(837799, $ret);
+		self::assertSame(837799, $ret);
 	}
 }

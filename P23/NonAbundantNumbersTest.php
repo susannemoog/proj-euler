@@ -1,11 +1,11 @@
 <?php
 namespace P23;
 
-class NonAbundantNumbersTest extends \PHPUnit_Framework_TestCase {
+class NonAbundantNumbersTest extends \PHPUnit\Framework\TestCase {
 
 	public function testGetSumOfNonAbundantNumbers() {
 		$nan = new NonAbundantNumbers();
 		$ret = $nan->getSum();
-		$this->assertSame(4179871, $ret);
+		self::assertSame(4179871, $ret);
 	}
 }
